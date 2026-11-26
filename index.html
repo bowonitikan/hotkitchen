@@ -1220,7 +1220,7 @@
       const totalUsed = tasks.reduce((sum, t) => sum + (Number(t.actualCost) || 0), 0);
       const budgetPct = Math.min(100, Math.round((totalUsed / TOTAL_BUDGET) * 100));
       document.getElementById('budgetUsedText').textContent = formatIDR(totalUsed);
-      document.getElementById('budgetPctText').textContent = `${budgetPct}% dari Rp 23.500.000`;
+      document.getElementById('budgetPctText').textContent = `${budgetPct}% dari Rp 26.500.000`;
       document.getElementById('budgetBar').style.width = `${budgetPct}%`;
 
       // Upcoming Deadlines (Top 4 non-done sorted by deadline)
